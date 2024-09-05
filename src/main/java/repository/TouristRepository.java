@@ -16,8 +16,6 @@ public class TouristRepository {
     }
 
     /////////////////////CRUD/////////////////////
-
-    /////////////////////CREATE/////////////////////
     public void addHardcodetDataTilListe() {
         touristRepository.add(new TouristAttraction("Tivoli", "Forlystelsespark i centrum af KBH"));
         touristRepository.add(new TouristAttraction("Frederiksberg Have", "Åben park midt på Frederiksberg"));
@@ -28,13 +26,10 @@ public class TouristRepository {
         touristRepository.add(new TouristAttraction(name, description));
     }
 
-    /////////////////////READ/////////////////////
-    //Henter alle turistattraktioner
     public List<TouristAttraction> getFullTouristRepository() {
         return touristRepository;
     }
 
-    //Henter en turistattraktion basseret på input
     public TouristAttraction getByNameTouristRepository(String name) {
         for (TouristAttraction t : touristRepository) {
             if (t.getName().equalsIgnoreCase(name)) {
@@ -44,11 +39,8 @@ public class TouristRepository {
         return null;
     }
 
-    /////////////////////UPDATE/////////////////////
-    //Opdaterer en turistattraktion baseret på input
+    //MANGLER UPDATE??
 
-
-    /////////////////////DELETE/////////////////////
     public void deleteAttraction(String name) {
         for (TouristAttraction t : touristRepository) {
             if (t.getName().equalsIgnoreCase(name)) {

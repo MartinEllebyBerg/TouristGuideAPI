@@ -25,6 +25,8 @@ public class TouristService {
     public TouristAttraction getSpecificTouristAttraction(String name) {
         return tr.getByNameTouristRepository(name);
     }
+
+    //MANGLER UPDATE??
     public void deleteAttraction(String name) {
         tr.deleteAttraction(name);
     }
