@@ -27,8 +27,8 @@ public class TouristService {
     }
 
     //MANGLER UPDATE??
-    public void deleteAttraction(String name) {
-        tr.deleteAttraction(name);
+    public void deleteAttraction(TouristAttraction ta) {
+        tr.deleteAttraction(ta);
     }
 
 }

@@ -41,11 +41,7 @@ public class TouristRepository {
 
     //MANGLER UPDATE??
 
-    public void deleteAttraction(String name) {
-        for (TouristAttraction t : touristRepository) {
-            if (t.getName().equalsIgnoreCase(name)) {
-                touristRepository.remove(t);
-            }
-        }
+    public void deleteAttraction(TouristAttraction ta) {
+        touristRepository.remove(ta);
     }
 }
