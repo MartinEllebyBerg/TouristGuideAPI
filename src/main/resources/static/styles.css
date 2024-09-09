@@ -22,7 +22,7 @@ body {
         'header header header' /* Headeren fylder begge kolonner */
         'nav main imgbil' /* Navigationen til venstre, hovedindhold i midt, billede til højre */
         'footer footer footer'; /* Foderen fylder begge kolonner */
-        grid-template-columns: 13em 1fr 1fr; /* Tre kolonner: nav er 12em bred, main fylder resten */
+        grid-template-columns: 15em 1fr 1fr; /* Tre kolonner: nav er 20em bred, main fylder resten */
         grid-template-rows: auto 1fr auto; /* Højden på rækkerne */
     }
 }
@@ -56,11 +56,11 @@ imgbil {
 h1 {
     text-align: center;
     font-family: sans-serif;
+    font-size: 50px;
 }
 h2 {
     text-align: left;
     font-family: "Century Gothic", serif;
-    font-size: larger;
 }
 .main-content {
     display: flex;
@@ -79,4 +79,8 @@ img {
 }
 p, a {
     font-family: Cambria;
+}
+.custom-br {
+    display: block;
+    margin-bottom: 10px;
 }
