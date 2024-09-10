@@ -90,5 +90,4 @@ p, a {
 .custom-br { /* Sætter mellemrum mellem afsnit ved hjælp af <span class="custom-br"></span> */
     display: block;
     margin-bottom: 10px;
-
 }
