@@ -43,24 +43,29 @@ footer {
     grid-area: footer;
 }
 body {
-    background-color: darkgray;
+    background-image: url(..//billeder/farver.webp);
+    background-size: cover; /* Denne linje sørger for, at billedet dækker hele skærmen */
+    background-position: center; /* Centrerer billedet */
+    background-repeat: no-repeat; /* Undgår, at billedet gentages */
 }
 header,
 nav,
 main,
 footer,
 imgbil {
-    background: beige;
+    background-color: powderblue; /* En lys gul farve */
     padding: 1em;
+    border-radius: 15px; /* bløde hjørner*/
 }
 h1 {
     text-align: center;
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: 55px;
 }
 h2 {
     text-align: left;
     font-family: "Century Gothic", serif;
+    font-size: 40px;
 }
 .main-content {
     display: flex;
@@ -76,11 +81,14 @@ h2 {
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 15px; /* bløde hjørner*/
 }
 p, a {
     font-family: Cambria;
+    font-size: 17px;
 }
-.custom-br {
+.custom-br { /* Sætter mellemrum mellem afsnit ved hjælp af <span class="custom-br"></span> */
     display: block;
     margin-bottom: 10px;
+
 }
